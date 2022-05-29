@@ -10,49 +10,33 @@ padding-left: 8px;
 padding-right: 8px;
 box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
 & .reg-box__item {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.23;
     margin-bottom: 20px;
-    &--text {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-    }
     &.border {
         margin-bottom: 8px;
         padding-bottom: 20px;
         border-bottom: 1px solid rgba(171, 129, 108, 0.5);;
     }
-
+    &--text {
+        font-weight: 400;
+    }
     
 }
 
 & h2 {
     margin-bottom: 20px;
-    font-family: 'Caveat Brush';
 }
 }
 .reg-box__list {
 width: 100%;
-padding-left: 7px;
-padding-right: 7px;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
 margin-bottom: 20px;
 color: rgba(171, 129, 108, 0.5);
 background-color: rgba(255, 255, 249, 1);
 border: none;
 border-bottom: 1px solid #AB816C;
-&:last-child {
-    margin-bottom: 32px;
+&::placeholder {
+    color: rgba(171, 129, 108, 0.5);
 }
 }
-// .container {
-//     background-color: rgba(254, 243, 228, 1);
-// }
