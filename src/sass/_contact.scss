@@ -1,6 +1,34 @@
 .contact {
+  & .title {
+    text-align: center;
+  }
 }
 .contact__subtitle {
+  text-align: center;
+  margin-top: 16px;
 }
 .contact-form {
+  & input {
+    margin-top: 16px;
+    border: 0;
+    border-bottom: 1px solid $details-color;
+    outline: 0;
+    width: 100%;
+    height: 100%;
+  }
+  & input::placeholder {
+    color: rgba(171, 129, 108, 0.5);
+  }
+  & textarea {
+    margin-top: 20px;
+    border: 0;
+    border-bottom: 1px solid $details-color;
+    outline: 0;
+    resize: none;
+    width: 100%;
+    height: 100%;
+  }
+  & textarea::placeholder {
+    color: rgba(171, 129, 108, 0.5);
+  }
 }
