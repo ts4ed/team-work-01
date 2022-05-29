@@ -1,3 +1,8 @@
+.hero__container{
+  @include mq(desktop){
+    width: 1280px;
+  }
+}
 .hero__section {
   display: flex;
   text-align: center;
