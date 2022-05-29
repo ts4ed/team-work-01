@@ -1,9 +1,20 @@
+.hero__container {
+  @include mq(desktop) {
+    width: 1280px;
+    padding-left: 19px;
+    padding-right: 19px;
+  }
+}
 .hero__section {
   display: flex;
   text-align: center;
   flex-direction: column;
   align-items: center;
   padding-top: 30px;
+  @include mq(tablet) {
+    align-items: flex-start;
+    text-align: start;
+  }
 }
 
 .hero__title {
@@ -15,12 +26,38 @@
   margin-bottom: 8px;
 
   color: $main-text-color;
+  @include mq(desktop) {
+    max-width: 490px;
+    font-size: 64px;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
 }
 
 .hero__description {
   font-weight: 500;
+  @include mq(desktop) {
+    font-size: 24px;
+    line-height: 1.2;
+  }
 }
 
 .hero__button {
-  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  @include mq(mobile-only) {
+    margin-bottom: 40px;
+  }
+  @include mq(tablet-only) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  @include mq(desktop) {
+    width: 158px;
+    height: 45px;
+    font-size: 24px;
+    line-height: 1.25;
+  }
 }
