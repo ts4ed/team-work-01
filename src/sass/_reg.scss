@@ -13,16 +13,14 @@ box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 
     font-weight: 500;
     font-size: 18px;
     line-height: 1.23;
-    margin-bottom: 20px;
+    margin-top: 20px;
     &.border {
-        margin-bottom: 8px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid rgba(171, 129, 108, 0.5);;
+        padding-top: 8px;
+        border-top: 1px solid rgba(171, 129, 108, 0.5);;
     }
-    &--text {
+    &:last-child {
         font-weight: 400;
     }
-    
 }
 
 & h2 {
@@ -31,7 +29,7 @@ box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 
 }
 .reg-box__list {
 width: 100%;
-margin-bottom: 20px;
+margin-top: 20px;
 color: rgba(171, 129, 108, 0.5);
 background-color: rgba(255, 255, 249, 1);
 border: none;
