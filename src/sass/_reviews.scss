@@ -1,4 +1,57 @@
-.oleg {
-    background-color: black;
-    color: tomato;
+.reviews {
+    padding-top: 20px;
+}
+
+.reviews-title {
+    font-size: 24px;
+    line-height: 1.25;
+    color: $main-text-color;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    // text-align: center;
+}
+
+.slider-item {
+    width: 280px;
+}
+
+.slider-item__img {
+    padding-bottom: 8px;
+}
+
+.star-list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8px;
+
+}
+
+.star-list__item:not(:last-child) {
+    margin-right: 4px;
+}
+
+.slider-item__name {
+    font-style: italic;
+    font-weight: 500;
+    color: $main-text-color;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.slider-item__text {
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+.slider-item__number {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.21;
+    color: $details-color;
 }

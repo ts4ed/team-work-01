@@ -294,8 +294,66 @@ body {
   color: rgba(171, 129, 108, 0.5);
 }
 
-.oleg {
-  background-color: black;
-  color: tomato;
+.reviews {
+  padding-top: 20px;
+}
+
+.reviews-title {
+  font-size: 24px;
+  line-height: 1.25;
+  color: #2E2520;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider-item {
+  width: 280px;
+}
+
+.slider-item__img {
+  padding-bottom: 8px;
+}
+
+.star-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 8px;
+}
+
+.star-list__item:not(:last-child) {
+  margin-right: 4px;
+}
+
+.slider-item__name {
+  font-style: italic;
+  font-weight: 500;
+  color: #2E2520;
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.slider-item__text {
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.slider-item__number {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #AB816C;
 }
 /*# sourceMappingURL=index.css.map */
