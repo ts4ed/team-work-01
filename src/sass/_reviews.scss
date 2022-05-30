@@ -1,34 +1,84 @@
 .reviews {
-    padding-top: 20px;
+    @include mq(mobile-only) {
+        padding-top: 20px;
+    }
+
+    @include mq(tablet) {
+        padding-top: 50px;
+    }
 }
 
 .reviews-title {
     font-size: 24px;
     line-height: 1.25;
     color: $main-text-color;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     text-align: center;
+
+    @include mq(tablet) {
+            margin-bottom: -14px;
+        }
 }
 
 .slider {
     display: flex;
     justify-content: center;
-    // align-items: center;
-    // text-align: center;
 }
 
 .slider-item {
     width: 280px;
+
+    @include mq(tablet) {
+            margin-bottom: 60px;
+            width: 336px;
+        }
+
+    @include mq(desktop) {
+        width: 394px;
+    }
+}
+
+.slider-item:not(:last-child) {
+    @include mq(tablet) {
+            margin-right: 32px;
+        }
+}
+
+.slider-item__center {
+    @include mq(tablet) {
+        margin-top: 74px;
+    }
+
+    @include mq(desktop) {
+        margin-top: 192px;
+    }
+}
+
+.slider-none {
+    @include mq(mobile-only) {
+        display: none;
+    }
+
+    @include mq(tablet) {
+        display: block;
+        width: 152px;
+        align-self: flex-start;
+    }
+
+    @include mq(desktop) {
+        width: 288px;
+        margin-top: 49px;
+    }
 }
 
 .slider-item__img {
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .star-list {
     display: flex;
     justify-content: center;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 
 }
 
@@ -41,17 +91,89 @@
     font-weight: 500;
     color: $main-text-color;
     text-align: center;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
+
+    @include mq(tablet) {
+        margin-bottom: 20px;
+    }
+}
+
+.container-slider-text1 {
+    @include mq(mobile-only) {
+        display: block;
+    }
+
+    @include mq(tablet) {
+        display: none;
+    }
+}
+
+
+.container-slider-text2 {
+    @include mq(mobile-only) {
+        display: none;
+    }
+
+    @include mq(tablet) {
+        display: block;
+    }
 }
 
 .slider-item__text {
     text-align: center;
-    padding-bottom: 32px;
+    margin-bottom: 32px;
+    width: 280px;
+
+    @include mq(tablet) {
+        width: 704px;
+        margin-left: -55%;
+    }
+
+    @include mq(desktop) {
+        width: 1248px;
+        margin-left: -110%;
+    }
 }
+
 
 .slider-item__number {
     text-align: center;
     font-size: 14px;
     line-height: 1.21;
     color: $details-color;
+    position: relative;
+}
+
+.slider-item__number::before {
+    content: url(../images/reviews-next.svg);
+    position: absolute;
+    top: -25%;
+    left: 30%;
+
+     @include mq(tablet) {
+        top: -25%;
+        left: 32.5%;
+    }
+
+    @include mq(desktop) {
+        top: -25%;
+        left: 35%;
+    }
+}
+
+.slider-item__number::after {
+    content: url(../images/reviews-next.svg);
+    position: absolute;
+    top: -25%;
+    right: 30%;
+
+    @include mq(tablet) {
+        top: -25%;
+        right: 32.5%;
+    }
+
+    @include mq(desktop) {
+        top: -25%;
+        right: 35%;
+    }
 }
