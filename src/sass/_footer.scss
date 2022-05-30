@@ -1,0 +1,10 @@
+.social__list {
+  display: flex;
+  height: 16px;
+}
+.social__item:not(:last-child) {
+  margin-right: 16px;
+}
+.social__icon {
+  fill: $main-text-color;
+}
