@@ -9,6 +9,14 @@
   margin-bottom: 32px;
   border: none;
   border-radius: 25px;
+  cursor: pointer;
   color: $button-text-color;
   background-color: $details-color;
+  transition: 250ms cubic-bezier(0.17, 0.30, 0.50, 0.80);
+  &:hover{
+    background-color: $accent-icon-color;
+  }
+  &:focus{
+    background-color: $accent-icon-color;
+  }
 }
