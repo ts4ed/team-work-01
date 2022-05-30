@@ -1,4 +1,5 @@
 .hero__container {
+  position: relative;
   @include mq(desktop) {
     width: 1280px;
     padding-left: 19px;
@@ -59,5 +60,134 @@
     height: 45px;
     font-size: 24px;
     line-height: 1.25;
+  }
+}
+
+.donut1 {
+  position: absolute;
+  z-index: 200;
+  @include mq(mobile-only) {
+    top: 7px;
+    left: 0px;
+  }
+  @include mq(tablet) {
+    top: 72px;
+    right: 261px;
+  }
+  @include mq(desktop) {
+    top: 53px;
+    right: 255px;
+  }
+}
+.donut2 {
+  position: absolute;
+  z-index: 199;
+  @include mq(mobile-only) {
+    top: 2px;
+    left: 37px;
+  }
+  @include mq(tablet-only) {
+    top: 92px;
+    right: 212px;
+  }
+  @include mq(desktop) {
+    top: 97px;
+    right: 154px;
+  }
+}
+.donut3 {
+  position: absolute;
+  z-index: 198;
+  @include mq(mobile-only) {
+    top: 38px;
+    left: 17px;
+  }
+  @include mq(tablet-only) {
+    top: 179px;
+    right: 180px;
+  }
+  @include mq(desktop) {
+    top: 279px;
+    right: 86px;
+  }
+}
+.donut4 {
+  position: absolute;
+  z-index: 197;
+  @include mq(mobile-only) {
+    top: 54px;
+    left: 74px;
+  }
+  @include mq(tablet-only) {
+    top: 218px;
+    right: 102px;
+  }
+  @include mq(desktop) {
+    top: 360px;
+    right: 0px;
+  }
+}
+.donut5 {
+  position: absolute;
+  z-index: 196;
+  @include mq(mobile-only) {
+    top: 0;
+    left: 17px;
+  }
+  @include mq(tablet-only) {
+    top: 19px;
+    right: 260px;
+  }
+  @include mq(desktop) {
+    top: 0px;
+    right: 255px;
+  }
+}
+.donut6 {
+  position: absolute;
+  z-index: 195;
+  @include mq(mobile-only) {
+    top: 44px;
+    left: 4px;
+  }
+  @include mq(tablet-only) {
+    top: 193px;
+    right: 306px;
+  }
+  @include mq(desktop) {
+    top: 308px;
+    right: 350px;
+  }
+}
+.donut7 {
+  position: absolute;
+  z-index: 194;
+  @include mq(mobile-only) {
+    top: 0px;
+    left: 52px;
+  }
+  @include mq(tablet-only) {
+    top: 0px;
+    right: 117px;
+  }
+  @include mq(desktop) {
+    top: 0px;
+    right: 0px;
+  }
+}
+.donut8 {
+  position: absolute;
+  z-index: 193;
+  @include mq(mobile-only) {
+    top: 64px;
+    left: 0px;
+  }
+  @include mq(tablet-only) {
+    top: 242px;
+    right: 337px;
+  }
+  @include mq(desktop) {
+    top: 411px;
+    right: 417px;
   }
 }
