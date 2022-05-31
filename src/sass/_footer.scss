@@ -1,0 +1,17 @@
+.social__list {
+  display: flex;
+  height: 16px;
+}
+.social__item:not(:last-child) {
+  margin-right: 16px;
+}
+.social__icon {
+  fill: $main-icons-color;
+  transition: 250ms cubic-bezier(0.17, 0.30, 0.50, 0.80);
+  &:hover{
+    fill: $sec-icons-color;
+  }
+  &:focus{
+    fill: $sec-icons-color;
+  }
+}
