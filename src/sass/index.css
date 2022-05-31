@@ -511,10 +511,30 @@ body {
   }
 }
 
+.footer__container {
+  position: relative;
+  padding: 32px 0;
+}
+
+@media (min-width: 768px) {
+  .footer__container {
+    padding: 32px 0 60px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer__container {
+    padding: 32px 0 80px;
+  }
+}
+
 .social__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 16px;
 }
 
@@ -524,6 +544,83 @@ body {
 
 .social__icon {
   fill: #2E2520;
+}
+
+.wrapper__adress {
+  margin-top: 32px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .adress {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1280px) {
+  .adress {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.adress__link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: right;
+  color: #000000;
+}
+
+@media (min-width: 1280px) {
+  .adress__link {
+    margin-right: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .adress__link:not(:last-child) {
+    margin-right: 426px;
+    margin-left: 32px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .adress__link:not(:last-child) {
+    margin-right: 620px;
+    margin-left: 128px;
+  }
+}
+
+.adress__icon {
+  margin-right: 4px;
+}
+
+.adress__icon:not(:last-child) {
+  margin-left: 63px;
+}
+
+.picture1 {
+  position: absolute;
+  background-image: url("../images/mobile/wheat-flour--mobile.png");
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
 }
 
 .reg-box {

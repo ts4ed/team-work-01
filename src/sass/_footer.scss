@@ -1,10 +1,127 @@
+.footer__container {
+  position: relative;
+  padding: 32px 0;
+
+
+  @include mq(tablet) {
+    padding: 32px 0 60px;
+  }
+
+  @include mq(desktop) {
+    padding: 32px 0 80px;
+  }
+}
+
+
 .social__list {
   display: flex;
+  justify-content: center;
   height: 16px;
 }
+
 .social__item:not(:last-child) {
   margin-right: 16px;
 }
+
 .social__icon {
   fill: $main-icons-color;
 }
+
+
+.wrapper__adress {
+  margin-top: 32px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+
+.adress {
+  display: flex;
+  justify-content: space-between;
+
+
+  @include mq(tablet) {
+    justify-content: flex-start;
+  }
+
+  @include mq(desktop) {
+    justify-content: flex-start;
+  }
+
+
+
+  &__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+    color: $sec-text-color;
+
+
+    @include mq(desktop) {
+      margin-right: 18px;
+    }
+  }
+
+  &__link:not(:last-child) {
+    // margin-right: 20px;
+
+    @include mq(tablet) {
+      margin-right: 426px;
+      margin-left: 32px;
+    }
+
+    @include mq(desktop) {
+      margin-right: 620px;
+      margin-left: 128px;
+    }
+  }
+
+  &__icon {
+    margin-right: 4px;
+
+  }
+
+  &__icon:not(:last-child) {
+    margin-left: 63px;
+
+  }
+}
+
+.picture1 {
+  position: absolute;
+  background-image:
+
+    url("../images/mobile/wheat-flour--mobile.png");
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+// .picture {
+// position: absolute;
+// height: 113px;
+// width: 99px;
+// left: 196px;
+// bottom: -60px;
+
+// @include mq(tablet) {
+//   position: absolute;
+//   height: 182px;
+//   width: 207px;
+//   left: 400px;
+//   bottom: -60px;
+// }
+
+// @include mq(desktop) {
+//   position: absolute;
+//   height: 182px;
+//   width: 207px;
+//   left: 855px;
+//   bottom: -82px;
+// }
+// }
