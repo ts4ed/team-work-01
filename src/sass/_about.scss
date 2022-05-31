@@ -1,6 +1,5 @@
 .about {
     margin-top: 5px;
-
     @include mq(tablet-only) {
         margin-top: 69px;
     }
