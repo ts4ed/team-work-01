@@ -64,7 +64,7 @@
 
 }
 
-.hide-text {
+.hide-about-text {
     display: none;
     margin-bottom: 16px;
 
@@ -87,7 +87,7 @@
     }
 }
 
-.input:checked~.hide-text {
+.input:checked~.hide-about-text{
     display: block;
 }
 
