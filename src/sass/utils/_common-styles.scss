@@ -39,6 +39,7 @@ body {
 .title {
     font-family: 'Caveat Brush', serif;
     font-size: 24px;
+    font-weight: 400;
     
     @include mq(desktop) {
             font-size: 36px;
