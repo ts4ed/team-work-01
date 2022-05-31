@@ -3,26 +3,24 @@
 
     @include mq(tablet-only) {
         margin-top: 69px;
-
     }
-
     @include mq(desktop-only) {
         margin-top: 111px;
-
     }
 }
 
 .about__img {
     margin-bottom: 16px;
-
     @include mq(tablet-only) {
         margin: 0;
         height: auto;
+    
     }
 
     @include mq(desktop-only) {
         margin: 0;
         height: auto;
+       
     }
 
 }
@@ -50,10 +48,8 @@
         margin-right: 32px;
         width: calc(100% / 2);
     }
-
     @include mq(desktop-only) {
-
-        width: calc(100% / 2);
+      
     }
 }
 
@@ -63,10 +59,6 @@
 
     @include mq(desktop) {
         font-size: 18px;
-
-
-
-
     }
 
 }
@@ -78,8 +70,6 @@
     @include mq(desktop) {
         display: block;
         font-size: 18px;
-
-
     }
 
 }
