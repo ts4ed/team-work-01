@@ -8,19 +8,32 @@
     }
 }
 
-.about__img {
-    margin-bottom: 16px;
+.about-container {
+
     @include mq(tablet-only) {
-        margin: 0;
-        height: auto;
-    
+        display: flex;
+        justify-content: space-between;
     }
 
-    // @include mq(desktop-only) {
-    //     margin: 0;
-    //     height: auto;
-       
-    // }
+    @include mq (desktop) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+
+.about__img {
+
+    @include mq(mobile-only) {
+        margin-bottom: 16px;
+    }
+    
+     
+    
 
 }
 
@@ -30,36 +43,28 @@
 
     @include mq(tablet) {
         text-align: left;
-        margin-bottom: 16px;
         margin-top: 21px;
+        margin-bottom: 16px;
+        
     }
 
     @include mq(desktop) {
         text-align: left;
-        font-size: 36px;
-        line-height: 1.8;
-
+        margin-top: 43px;
+        margin-bottom: 10px;
     }
 }
 
-.about-picture {
-    @include mq(tablet-only) {
-        margin-right: 32px;
-        width: calc(100% / 2);
-    }
-   
-    // @include mq(desktop-only) {
-    //         width: calc(100% / 2);
-    //     }
-    }
+
 
 
 .about__text {
     display: block;
-    margin-bottom: 16px;
+    
 
     @include mq(desktop) {
         font-size: 18px;
+        line-height: 1.219;
     }
 
 }
@@ -71,6 +76,7 @@
     @include mq(desktop) {
         display: block;
         font-size: 18px;
+        margin-bottom: 0;
     }
 
 }
@@ -105,46 +111,19 @@
 
 }
 
-.about-container {
-    
 
-    @include mq(mobile-only) {
-        width: 320px;
-        padding-left: 20px;
-        padding-right: 21px;
-    }
-
-    @include mq(tablet-only) {
-        display: flex;
-        justify-content: space-between;
-        width: 768px;
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
-    @include mq (desktop) {
-        display: flex;
-        padding-left: 122px;
-        padding-right: 125px;
-        
-                width: calc(100% / 2);
-            
-    }
-}
 
 .about-box {
     @include mq(tablet-only) {
-        width: calc(100% / 2);
+        max-width: 336px;
         display: block;
         height: auto;
     }
 
-    @include mq(desktop-only) {
-        width: calc(100% / 2);
+    @include mq(desktop) {
         max-width: 392px;
         display: block;
         height: auto;
-        margin-left: 139px;
     }
 
 }
