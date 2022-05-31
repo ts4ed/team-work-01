@@ -19,4 +19,7 @@
   &:focus{
     background-color: $accent-icon-color;
   }
+  &:active {
+    background-color: $sec-icons-color;
+  }
 }
