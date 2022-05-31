@@ -16,11 +16,11 @@
     
     }
 
-    @include mq(desktop-only) {
-        margin: 0;
-        height: auto;
+    // @include mq(desktop-only) {
+    //     margin: 0;
+    //     height: auto;
        
-    }
+    // }
 
 }
 
@@ -48,9 +48,9 @@
         width: calc(100% / 2);
     }
    
-    @include mq(desktop-only) {
-            width: calc(100% / 2);
-        }
+    // @include mq(desktop-only) {
+    //         width: calc(100% / 2);
+    //     }
     }
 
 
@@ -106,8 +106,7 @@
 }
 
 .about-container {
-    width: 100%;
-    margin: 0 auto;
+    
 
     @include mq(mobile-only) {
         width: 320px;
@@ -127,6 +126,9 @@
         display: flex;
         padding-left: 122px;
         padding-right: 125px;
+        
+                width: calc(100% / 2);
+            
     }
 }
 
