@@ -34,27 +34,19 @@
 }
 .contact-form__email {
   margin-top: 16px;
-  &:invalid {
-    border-color: rgba(255, 0, 0, 0.5);
-  }
-  &:valid {
+  &:focus:valid {
     border-color: rgba(0, 128, 0, 0.5);
   }
-}
-.contact-form__email:active,
-.contact-form__email:focus {
-  border-bottom: 1px solid $details-color;
+  &:focus:invalid {
+    border-color: rgba(255, 0, 0, 0.5);
+  }
 }
 .contact-form__text {
   margin-top: 20px;
-  &:valid {
+  &:focus:valid {
     border-color: rgba(0, 128, 0, 0.5);
   }
-  &:invalid {
+  &:focus:invalid {
     border-color: rgba(255, 0, 0, 0.5);
   }
-}
-.contact-form__text:active,
-.contact-form__text:focus {
-  border-bottom: 1px solid $details-color;
 }
