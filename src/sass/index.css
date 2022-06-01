@@ -640,60 +640,21 @@ body {
 }
 
 .footer {
-  background-image: url("../images/mobile/wheat-flour--mobile.png");
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: 84px 74px;
-  padding-bottom: 20px;
-}
-
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .footer {
-    background-image: url("../images/mobile/wheat-flour--mobile@2x.png");
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer {
-    background-image: url("../images/tablet/wheat-flour--tablet.png");
-    background-size: 184px 120px;
-  }
-}
-
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .footer {
-    background-image: url("../images/tablet/wheat-flour--tablet@2x.png");
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer {
-    background-image: url("../images/desktop/wheat-flour--desktop.png");
-    background-size: 302px 176px;
-  }
-}
-
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .footer {
-    background-image: url("../images/desktop/wheat-flour--desktop@2x.png");
-  }
-}
-
-.footer__container {
   position: relative;
+  margin-bottom: 20px;
 }
 
-.footer__container .social__icon {
+.social__icon {
   fill: #2E2520;
   -webkit-transition: 250ms cubic-bezier(0.17, 0.3, 0.5, 0.8);
   transition: 250ms cubic-bezier(0.17, 0.3, 0.5, 0.8);
 }
 
-.footer__container .social__icon:hover {
+.social__icon:hover {
   fill: #674D40;
 }
 
-.footer__container .social__icon:focus {
+.social__icon:focus {
   fill: #674D40;
 }
 
