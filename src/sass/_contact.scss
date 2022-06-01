@@ -26,6 +26,8 @@
       min-width: 336px;
     }
     @include mq(desktop) {
+      background-color: $sec-bg-color;
+      
       min-width: 394px;
     }
   }
