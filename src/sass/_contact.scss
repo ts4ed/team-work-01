@@ -11,6 +11,7 @@
   flex-direction: column;
   align-items: center;
   & input {
+    background-color: $sec-bg-color;
     border: 0;
     border-bottom: 1px solid $details-color;
     outline: 0;
