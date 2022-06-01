@@ -60,7 +60,8 @@
 
 
   @include mq(tablet) {
-    margin-right: 93px;
+    margin-right: 61px;
+    margin-top: 59px;
   }
 
   @include mq(desktop) {
@@ -72,13 +73,9 @@
 
   &__link {
     display: block;
-    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
     text-align: right;
-    color: $sec-text-color;
+    color: $main-text-color;
   }
 
 
