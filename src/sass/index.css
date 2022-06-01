@@ -71,12 +71,12 @@ body {
 .title {
   font-family: 'Caveat Brush', serif;
   font-size: 24px;
+  font-weight: 400;
 }
 
 @media (min-width: 1280px) {
   .title {
     font-size: 36px;
-    font-weight: 400;
     line-height: 1.8;
   }
 }
@@ -192,19 +192,6 @@ body {
 
 .input:checked ~ .label .less {
   display: inline;
-}
-
-.about-container {
-  width: 100%;
-  margin: 0 auto;
-}
-
-@media (max-width: 767.98px) {
-  .about-container {
-    width: 320px;
-    padding-left: 20px;
-    padding-right: 21px;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 1279.98px) {
@@ -383,6 +370,12 @@ body {
   color: #2E2520;
 }
 
+@media (max-width: 767.98px) {
+  .hero__title {
+    z-index: 250;
+  }
+}
+
 @media (min-width: 1280px) {
   .hero__title {
     max-width: 490px;
@@ -445,21 +438,21 @@ body {
 
 @media (max-width: 767.98px) {
   .donut1 {
-    top: 7px;
-    left: 0px;
+    top: -58px;
+    left: -12px;
   }
 }
 
 @media (min-width: 768px) {
   .donut1 {
-    top: 72px;
+    top: -13px;
     right: 261px;
   }
 }
 
 @media (min-width: 1280px) {
   .donut1 {
-    top: 53px;
+    top: -66px;
     right: 255px;
   }
 }
@@ -471,21 +464,21 @@ body {
 
 @media (max-width: 767.98px) {
   .donut2 {
-    top: 2px;
-    left: 37px;
+    top: -50px;
+    left: 36px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1279.98px) {
   .donut2 {
-    top: 92px;
+    top: 8px;
     right: 212px;
   }
 }
 
 @media (min-width: 1280px) {
   .donut2 {
-    top: 97px;
+    top: -22px;
     right: 154px;
   }
 }
@@ -497,21 +490,21 @@ body {
 
 @media (max-width: 767.98px) {
   .donut3 {
-    top: 38px;
+    top: -14px;
     left: 17px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1279.98px) {
   .donut3 {
-    top: 179px;
+    top: 95px;
     right: 180px;
   }
 }
 
 @media (min-width: 1280px) {
   .donut3 {
-    top: 279px;
+    top: 160px;
     right: 86px;
   }
 }
@@ -523,22 +516,22 @@ body {
 
 @media (max-width: 767.98px) {
   .donut4 {
-    top: 54px;
+    top: -3px;
     left: 74px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1279.98px) {
   .donut4 {
-    top: 218px;
+    top: 133px;
     right: 102px;
   }
 }
 
 @media (min-width: 1280px) {
   .donut4 {
-    top: 360px;
-    right: 0px;
+    top: 241px;
+    right: -77px;
   }
 }
 
@@ -549,21 +542,21 @@ body {
 
 @media (max-width: 767.98px) {
   .donut5 {
-    top: 0;
+    top: -82;
     left: 17px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1279.98px) {
   .donut5 {
-    top: 19px;
+    top: -65px;
     right: 260px;
   }
 }
 
 @media (min-width: 1280px) {
   .donut5 {
-    top: 0px;
+    top: -175px;
     right: 255px;
   }
 }
@@ -575,21 +568,21 @@ body {
 
 @media (max-width: 767.98px) {
   .donut6 {
-    top: 44px;
-    left: 4px;
+    top: -10px;
+    left: 0px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1279.98px) {
   .donut6 {
-    top: 193px;
+    top: 108px;
     right: 306px;
   }
 }
 
 @media (min-width: 1280px) {
   .donut6 {
-    top: 308px;
+    top: 188px;
     right: 350px;
   }
 }
@@ -601,21 +594,21 @@ body {
 
 @media (max-width: 767.98px) {
   .donut7 {
-    top: 0px;
+    top: -103px;
     left: 52px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1279.98px) {
   .donut7 {
-    top: 0px;
+    top: -119px;
     right: 117px;
   }
 }
 
 @media (min-width: 1280px) {
   .donut7 {
-    top: 0px;
+    top: -289px;
     right: 0px;
   }
 }
@@ -627,66 +620,81 @@ body {
 
 @media (max-width: 767.98px) {
   .donut8 {
-    top: 64px;
-    left: 0px;
+    top: 11px;
+    left: -10px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1279.98px) {
   .donut8 {
-    top: 242px;
+    top: 157px;
     right: 337px;
   }
 }
 
 @media (min-width: 1280px) {
   .donut8 {
-    top: 411px;
+    top: 291px;
     right: 417px;
+  }
+}
+
+.footer {
+  background-image: url("../images/mobile/wheat-flour--mobile.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 84px 74px;
+  padding-bottom: 20px;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .footer {
+    background-image: url("../images/mobile/wheat-flour--mobile@2x.png");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    background-image: url("../images/tablet/wheat-flour--tablet.png");
+    background-size: 184px 120px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .footer {
+    background-image: url("../images/tablet/wheat-flour--tablet@2x.png");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    background-image: url("../images/desktop/wheat-flour--desktop.png");
+    background-size: 302px 176px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .footer {
+    background-image: url("../images/desktop/wheat-flour--desktop@2x.png");
   }
 }
 
 .footer__container {
   position: relative;
-  padding: 32px 0;
 }
 
-@media (min-width: 768px) {
-  .footer__container {
-    padding: 32px 0 60px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .footer__container {
-    padding: 32px 0 80px;
-  }
-}
-
-.social__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 16px;
-}
-
-.social__item:not(:last-child) {
-  margin-right: 16px;
-}
-
-.social__icon {
+.footer__container .social__icon {
   fill: #2E2520;
   -webkit-transition: 250ms cubic-bezier(0.17, 0.3, 0.5, 0.8);
   transition: 250ms cubic-bezier(0.17, 0.3, 0.5, 0.8);
 }
 
-.wrapper__adress {
-  margin-top: 32px;
-  margin-bottom: 20px;
-  position: relative;
+.footer__container .social__icon:hover {
+  fill: #674D40;
+}
+
+.footer__container .social__icon:focus {
+  fill: #674D40;
 }
 
 .adress {
@@ -696,52 +704,29 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 32px;
+  position: relative;
 }
 
 @media (min-width: 768px) {
   .adress {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    margin-right: 61px;
+    margin-top: 59px;
   }
 }
 
 @media (min-width: 1280px) {
   .adress {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    margin-right: 197px;
+    margin-top: 80px;
   }
 }
 
 .adress__link {
-  font-family: 'Montserrat';
+  display: block;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
   text-align: right;
-  color: #000000;
-}
-
-@media (min-width: 1280px) {
-  .adress__link {
-    margin-right: 18px;
-  }
-}
-
-@media (min-width: 768px) {
-  .adress__link:not(:last-child) {
-    margin-right: 426px;
-    margin-left: 32px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .adress__link:not(:last-child) {
-    margin-right: 620px;
-    margin-left: 128px;
-  }
+  color: #2E2520;
 }
 
 .adress__icon {
@@ -750,35 +735,6 @@ body {
 
 .adress__icon:not(:last-child) {
   margin-left: 63px;
-}
-
-.picture1 {
-  position: absolute;
-  background-image: url("../images/mobile/wheat-flour--mobile.png");
-  background-repeat: no-repeat;
-  bottom: 0;
-  left: 0;
-}
-
-.reg-box {
-  margin-top: 32px;
-  width: 280px;
-  height: 466px;
-  border-radius: 150px 150px 0 0;
-  background-color: #FFFFF9;
-  text-align: center;
-  padding-top: 32px;
-  padding-left: 8px;
-  padding-right: 8px;
-  -webkit-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
-          box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
-
-  .social__icon:hover {
-  fill: #674D40;
-}
-
-.social__icon:focus {
-  fill: #674D40;
 }
 
 .header {
@@ -1762,5 +1718,23 @@ body.mobile-menu__open {
     top: -25%;
     right: 35%;
   }
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 16px;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.social__icon {
+  fill: #2E2520;
 }
 /*# sourceMappingURL=index.css.map */
