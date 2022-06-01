@@ -21,6 +21,12 @@
 .menu-button__position {
     @extend .container;
     position: relative;
+
+        @include mq(desktop) {
+                width: 1280px;
+                padding-left: 19px;
+                padding-right: 19px;
+            }
 }
 
 .logo {
@@ -58,7 +64,7 @@
     @media screen and (max-width: 1279px) {
     
     position: fixed;
-    z-index: 99;
+    z-index: 999;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -89,7 +95,7 @@
 
 .menu-button {
     position: absolute;
-    z-index: 100;
+    z-index: 1000;
     top: 8px;
     right: 20px;
 
