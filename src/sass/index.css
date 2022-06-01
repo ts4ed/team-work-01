@@ -646,10 +646,30 @@ body {
   }
 }
 
+.footer__container {
+  position: relative;
+  padding: 32px 0;
+}
+
+@media (min-width: 768px) {
+  .footer__container {
+    padding: 32px 0 60px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer__container {
+    padding: 32px 0 80px;
+  }
+}
+
 .social__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 16px;
 }
 
@@ -663,7 +683,97 @@ body {
   transition: 250ms cubic-bezier(0.17, 0.3, 0.5, 0.8);
 }
 
-.social__icon:hover {
+.wrapper__adress {
+  margin-top: 32px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .adress {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1280px) {
+  .adress {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.adress__link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: right;
+  color: #000000;
+}
+
+@media (min-width: 1280px) {
+  .adress__link {
+    margin-right: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .adress__link:not(:last-child) {
+    margin-right: 426px;
+    margin-left: 32px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .adress__link:not(:last-child) {
+    margin-right: 620px;
+    margin-left: 128px;
+  }
+}
+
+.adress__icon {
+  margin-right: 4px;
+}
+
+.adress__icon:not(:last-child) {
+  margin-left: 63px;
+}
+
+.picture1 {
+  position: absolute;
+  background-image: url("../images/mobile/wheat-flour--mobile.png");
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+}
+
+.reg-box {
+  margin-top: 32px;
+  width: 280px;
+  height: 466px;
+  border-radius: 150px 150px 0 0;
+  background-color: #FFFFF9;
+  text-align: center;
+  padding-top: 32px;
+  padding-left: 8px;
+  padding-right: 8px;
+  -webkit-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+          box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+
+  .social__icon:hover {
   fill: #674D40;
 }
 
