@@ -82,12 +82,18 @@ body {
 }
 
 .about {
-  margin-top: 5px;
+  padding-top: 5px;
 }
 
 @media (min-width: 768px) and (max-width: 1279.98px) {
   .about {
-    margin-top: 69px;
+    padding-top: 69px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about {
+    padding-top: 111px;
   }
 }
 
@@ -162,6 +168,11 @@ body {
     font-size: 18px;
     margin-bottom: 0;
   }
+}
+
+.more {
+  display: block;
+  margin-top: 16px;
 }
 
 .label {
