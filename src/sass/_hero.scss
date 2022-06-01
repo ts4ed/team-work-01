@@ -17,7 +17,7 @@
     text-align: start;
     padding-top: 15px;
   }
-  @include mq(desktop){
+  @include mq(desktop) {
     padding-top: 42px;
   }
 }
@@ -32,7 +32,7 @@
   margin-bottom: 8px;
 
   color: $main-text-color;
-  @include mq(mobile-only){
+  @include mq(mobile-only) {
     z-index: 210;
   }
   @include mq(desktop) {
@@ -197,5 +197,14 @@
   @include mq(desktop) {
     top: 279px;
     right: 417px;
+  }
+}
+.hero__spoon {
+  position: absolute;
+  display: none;
+  @include mq(desktop) {
+    display: block;
+    top: 380px;
+    left: -140px;
   }
 }
