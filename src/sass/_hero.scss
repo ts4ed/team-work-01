@@ -15,6 +15,10 @@
   @include mq(tablet) {
     align-items: flex-start;
     text-align: start;
+    padding-top: 15px;
+  }
+  @include mq(desktop){
+    padding-top: 42px;
   }
 }
 
@@ -22,11 +26,15 @@
   font-family: 'Caveat Brush';
   font-size: 30px;
   line-height: 1.27;
+  font-weight: 400;
 
   max-width: 224px;
   margin-bottom: 8px;
 
   color: $main-text-color;
+  @include mq(mobile-only){
+    z-index: 210;
+  }
   @include mq(desktop) {
     max-width: 490px;
     font-size: 64px;
@@ -67,15 +75,15 @@
   position: absolute;
   z-index: 200;
   @include mq(mobile-only) {
-    top: 7px;
-    left: 0px;
+    top: -58px;
+    left: -12px;
   }
   @include mq(tablet) {
-    top: 72px;
+    top: -13px;
     right: 261px;
   }
   @include mq(desktop) {
-    top: 53px;
+    top: -78px;
     right: 255px;
   }
 }
@@ -83,15 +91,15 @@
   position: absolute;
   z-index: 199;
   @include mq(mobile-only) {
-    top: 2px;
-    left: 37px;
+    top: -50px;
+    left: 36px;
   }
   @include mq(tablet-only) {
-    top: 92px;
+    top: 8px;
     right: 212px;
   }
   @include mq(desktop) {
-    top: 97px;
+    top: -34px;
     right: 154px;
   }
 }
@@ -99,15 +107,15 @@
   position: absolute;
   z-index: 198;
   @include mq(mobile-only) {
-    top: 38px;
+    top: -14px;
     left: 17px;
   }
   @include mq(tablet-only) {
-    top: 179px;
+    top: 95px;
     right: 180px;
   }
   @include mq(desktop) {
-    top: 279px;
+    top: 148px;
     right: 86px;
   }
 }
@@ -115,31 +123,31 @@
   position: absolute;
   z-index: 197;
   @include mq(mobile-only) {
-    top: 54px;
+    top: -3px;
     left: 74px;
   }
   @include mq(tablet-only) {
-    top: 218px;
+    top: 133px;
     right: 102px;
   }
   @include mq(desktop) {
-    top: 360px;
-    right: 0px;
+    top: 229px;
+    right: -77px;
   }
 }
 .donut5 {
   position: absolute;
   z-index: 196;
   @include mq(mobile-only) {
-    top: 0;
+    top: -82;
     left: 17px;
   }
   @include mq(tablet-only) {
-    top: 19px;
+    top: -65px;
     right: 260px;
   }
   @include mq(desktop) {
-    top: 0px;
+    top: -187px;
     right: 255px;
   }
 }
@@ -147,15 +155,15 @@
   position: absolute;
   z-index: 195;
   @include mq(mobile-only) {
-    top: 44px;
-    left: 4px;
+    top: -10px;
+    left: 0px;
   }
   @include mq(tablet-only) {
-    top: 193px;
+    top: 108px;
     right: 306px;
   }
   @include mq(desktop) {
-    top: 308px;
+    top: 176px;
     right: 350px;
   }
 }
@@ -163,15 +171,15 @@
   position: absolute;
   z-index: 194;
   @include mq(mobile-only) {
-    top: 0px;
+    top: -103px;
     left: 52px;
   }
   @include mq(tablet-only) {
-    top: 0px;
+    top: -119px;
     right: 117px;
   }
   @include mq(desktop) {
-    top: 0px;
+    top: -301px;
     right: 0px;
   }
 }
@@ -179,15 +187,15 @@
   position: absolute;
   z-index: 193;
   @include mq(mobile-only) {
-    top: 64px;
-    left: 0px;
+    top: 11px;
+    left: -10px;
   }
   @include mq(tablet-only) {
-    top: 242px;
+    top: 157px;
     right: 337px;
   }
   @include mq(desktop) {
-    top: 411px;
+    top: 279px;
     right: 417px;
   }
 }
