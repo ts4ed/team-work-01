@@ -1759,6 +1759,83 @@ body.mobile-menu__open {
   }
 }
 
+.swiper {
+  position: relative;
+  margin-top: 100px;
+}
+
+.swiper-slide-active {
+  margin-top: 200px;
+}
+
+.swiper-button-prev:after {
+  display: none;
+}
+
+.swiper-button-next:after {
+  display: none;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  top: 100.5%;
+  left: 42%;
+  background: url("../images/reviews-next.svg");
+  width: 35px;
+  height: 1px;
+  z-index: 20;
+}
+
+.swiper-button-next {
+  position: absolute;
+  top: 100.5%;
+  right: 42%;
+  background: url("../images/reviews-next.svg");
+  width: 35px;
+  height: 1px;
+  z-index: 20;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+}
+
+.swiper-slide img {
+  display: block;
+  width: 152px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
+}
+
+.swiper-slide-active img {
+  width: 500px;
+}
+
+.swiper-slide__text {
+  display: none;
+}
+
+.swiper-slide-active .swiper-slide__text {
+  display: block;
+  width: 280px;
+}
+
+.swiper-slide-active .img {
+  width: 600px;
+}
+
+.swiper-pagination {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #AB816C;
+}
+
 .social__list {
   display: -webkit-box;
   display: -ms-flexbox;
