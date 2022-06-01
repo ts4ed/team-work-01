@@ -15,6 +15,10 @@
   @include mq(tablet) {
     align-items: flex-start;
     text-align: start;
+    padding-top: 15px;
+  }
+  @include mq(desktop){
+    padding-top: 42px;
   }
 }
 
@@ -22,13 +26,14 @@
   font-family: 'Caveat Brush';
   font-size: 30px;
   line-height: 1.27;
+  font-weight: 400;
 
   max-width: 224px;
   margin-bottom: 8px;
 
   color: $main-text-color;
   @include mq(mobile-only){
-    z-index: 250;
+    z-index: 210;
   }
   @include mq(desktop) {
     max-width: 490px;
@@ -78,7 +83,7 @@
     right: 261px;
   }
   @include mq(desktop) {
-    top: -66px;
+    top: -78px;
     right: 255px;
   }
 }
@@ -94,7 +99,7 @@
     right: 212px;
   }
   @include mq(desktop) {
-    top: -22px;
+    top: -34px;
     right: 154px;
   }
 }
@@ -110,7 +115,7 @@
     right: 180px;
   }
   @include mq(desktop) {
-    top: 160px;
+    top: 148px;
     right: 86px;
   }
 }
@@ -126,7 +131,7 @@
     right: 102px;
   }
   @include mq(desktop) {
-    top: 241px;
+    top: 229px;
     right: -77px;
   }
 }
@@ -142,7 +147,7 @@
     right: 260px;
   }
   @include mq(desktop) {
-    top: -175px;
+    top: -187px;
     right: 255px;
   }
 }
@@ -158,7 +163,7 @@
     right: 306px;
   }
   @include mq(desktop) {
-    top: 188px;
+    top: 176px;
     right: 350px;
   }
 }
@@ -174,7 +179,7 @@
     right: 117px;
   }
   @include mq(desktop) {
-    top: -289px;
+    top: -301px;
     right: 0px;
   }
 }
@@ -190,7 +195,7 @@
     right: 337px;
   }
   @include mq(desktop) {
-    top: 291px;
+    top: 279px;
     right: 417px;
   }
 }

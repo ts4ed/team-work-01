@@ -64,7 +64,9 @@
     @media screen and (max-width: 1279px) {
     
     position: fixed;
-    z-index: 999;
+
+    z-index: 250;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -95,7 +97,9 @@
 
 .menu-button {
     position: absolute;
-    z-index: 1000;
+
+    z-index: 251;
+
     top: 8px;
     right: 20px;
 
