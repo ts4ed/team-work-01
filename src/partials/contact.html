@@ -3,20 +3,24 @@
     <h2 class="title">Contact</h2>
     <p class="contact__subtitle">We will answer any question!</p>
     <form class="contact-form">
-      <label for="email"></label>
+      <label for="contact-email"></label>
       <input
         class="contact-form__email"
-        type="text"
-        id="email"
+        type="email"
+        id="contact-email"
         placeholder="Email"
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        maxlength="30"
+        required
       />
       <label for="text"></label>
       <input
         class="contact-form__text"
         name="text"
-        id="text"
+        id="contact-text"
         placeholder="Type your question"
+        maxlength="70"
+        pattern="[A-Za-z0-9._%+-?!\s]{1,70}"
       />
       <button type="submit" class="button">Send</button>
     </form>

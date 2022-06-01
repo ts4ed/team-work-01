@@ -1,37 +1,35 @@
-<header>
-    <div class="container">
-        
-        <a href="">
-            <svg>
+<header class="header">
+    <div class="logo__nav menu-button__position">
+                
+            <svg class="logo">
                 <use href="./images/icons.svg#icon-logo"></use>
             </svg>
-        </a>
-
-        <button type="button"
+        
+        <button type="button" class="menu-button"
                 aria-expanded="false"
                 aria-controls="menu-container"  
                 data-menu-button>
-                    <svg
-                        aria-label="Переключатель мобильного меню">
-                            <use href="./images/icons.svg#icon-menu"></use>
-                            <use href="./images/icons.svg#icon-close"></use>
+                    <svg class="menu-button__icon--size"
+                        aria-label="Mobile menu switcher">
+                            <use class="menu-button__icon--close" href="./images/icons.svg#icon-close"></use>    
+                            <use class="menu-button__icon--open" href="./images/icons.svg#icon-menu"></use>
                     </svg>
         </button>
             
-        <nav>
+        <nav class="menu-container" data-menu>
             <a href="">
-                <svg>
+                <svg class="logo__menu">
                     <use href="./images/icons.svg#icon-logo"></use>
                 </svg>
             </a>
 
-            <ul>
-                <li><a href="">About us</a></li>
-                <li><a href="">Program</a></li>
-                <li><a href="">Reviews</a></li>
-                <li><a href="">Contacts</a></li>
+            <ul class="site-nav">
+                <li class="site-nav__item"><a data-goto=".about-box" href="#" class="menu__link">About us</a></li>
+                <li class="site-nav__item"><a data-goto=".program" href="#" class="menu__link">Program</a></li>
+                <li class="site-nav__item"><a data-goto=".reviews" href="#" class="menu__link">Reviews</a></li>
+                <li class="site-nav__item"><a data-goto=".contact" href="#" class="menu__link">Contacts</a></li>
             </ul>
         </nav>
-       
+    
     </div>
 </header>

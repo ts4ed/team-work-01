@@ -1,7 +1,7 @@
 <section class="program">
-    <div class="container">
-        <h2 class="title program__title">Program</h2>
+    <div class="container program__container">
         <div class="program-description">
+            <h2 class="title program__title">Program</h2>
             <p class="program-description__text">
                 Indulge in this immersive sweet treat experience with The Chef
                 Donut Queen in her New York donut shop!
@@ -12,7 +12,7 @@
                 </li>
                 <li class="program-list__item">
                     <p></p>
-                    Make 3 donut flavors of your choice
+                    > Make 3 donut flavors of your choice
                 </li>
                 <li class="program-list__item">
                     <p>> Enjoy all-you-can-eat donuts</p>
@@ -30,58 +30,53 @@
                     <p>> All products are included in the price</p>
                 </li>
             </ul>
-            <input hidden class="program__input" id="text" type="checkbox" />
-            <p class="hide-text">
+            <input hidden class="program__input" id="program-text" type="checkbox" />
+            <p class="hide-program-text">
                 Come with your dear people and friends and you will spend an
                 unforgettable time and will become a real professional in donuts
+                cooking!
             </p>
-            <label class="label" for="text"><span class="label__more">Read more</span>
+            <label class="program__label" for="program-text"><span class="label__more">Read more</span>
                 <span class="label__less">Less</span></label>
         </div>
         <div class="event">
-            <ul class="event__list">
-                <div class="event__container">
-                    <li class="event__item">
-                        <div class="event__circle">
-                            <h3 class="event__title">Type of the event</h3>
-                            <span class="event__info">Cooking classes</span>
-                            <svg class="event__icon" width="19" height="18">
-                                <!-- лого -->
-                                <use href="#"></use>
-                            </svg>
-                        </div>
-                    </li>
-                    <li class="event__item">
-                        <div class="event__circle">
-                            <h3 class="event__title">Time of the event</h3>
-                            <span class="event__info">18:30 (2.5 hours)</span>
-                            <svg class="event__icon" width="19" height="19">
-                                <!-- лого -->
-                                <use href="#"></use>
-                            </svg>
-                        </div>
-                    </li>
-                    <li class="event__item">
-                        <div class="event__circle">
-                            <h3 class="event__title">Number of guests</h3>
-                            <span class="event__info">1 to 20</span>
-                            <svg class="event__icon" width="19" height="17">
-                                <!-- лого -->
-                                <use href="#"></use>
-                            </svg>
-                        </div>
-                    </li>
-                    <li class="event__item">
-                        <div class="event__circle">
-                            <h3 class="event__title">The host speaks</h3>
-                            <span class="event__info">English, French</span>
-                            <svg class="event__icon" width="19" height="13">
-                                <!-- лого -->
-                                <use href="#"></use>
-                            </svg>
-                        </div>
-                    </li>
-                </div>
+            <ul class="event__list event__container">
+                <li class="event__item">
+                    <div class="event__circle-type">
+                        <h3 class="event__title">Type of the event</h3>
+                        <span class="event__info">Cooking classes</span>
+                        <svg class="event__icon" width="19" height="18">
+                            <use href="./images/icons.svg#icon-toque"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="event__item">
+                    <div class="event__circle-number">
+                        <h3 class="event__title">Number of guests</h3>
+                        <span class="event__info">1 to 20</span>
+                        <svg class="event__icon" width="19" height="17">
+                            <use href="./images/icons.svg#icon-people"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="event__item">
+                    <div class="event__circle-time">
+                        <h3 class="event__title">Time of the event</h3>
+                        <span class="event__info">18:30 (2.5 hours)</span>
+                        <svg class="event__icon" width="19" height="19">
+                            <use href="./images/icons.svg#icon-clock"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="event__item">
+                    <div class="event__circle-host">
+                        <h3 class="event__title">The host speaks</h3>
+                        <span class="event__info">English, French</span>
+                        <svg class="event__icon" width="25" height="20">
+                            <use href="./images/icons.svg#icon-talk"></use>
+                        </svg>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>

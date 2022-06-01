@@ -32,7 +32,19 @@
 }
 .contact-form__email {
   margin-top: 16px;
+  &:focus:valid {
+    border-color: rgba(0, 128, 0, 0.5);
+  }
+  &:focus:invalid {
+    border-color: rgba(255, 0, 0, 0.5);
+  }
 }
 .contact-form__text {
   margin-top: 20px;
+  &:focus:valid {
+    border-color: rgba(0, 128, 0, 0.5);
+  }
+  &:focus:invalid {
+    border-color: rgba(255, 0, 0, 0.5);
+  }
 }
