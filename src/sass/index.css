@@ -1758,14 +1758,13 @@ body.mobile-menu__open {
 .swiper.mySwiper {
   position: relative;
   margin-top: 20px;
-  width: 280px;
   height: 617px;
 }
 
 @media (min-width: 768px) {
   .swiper.mySwiper {
     margin-top: -9px;
-    width: 704px;
+    width: 100%;
     height: 655px;
   }
 }
@@ -1773,7 +1772,7 @@ body.mobile-menu__open {
 @media (min-width: 1280px) {
   .swiper.mySwiper {
     margin-top: 56px;
-    width: 1031px;
+    width: 100%;
     height: 757px;
   }
 }
@@ -1799,20 +1798,16 @@ body.mobile-menu__open {
 }
 
 .swiper-button-prev {
-  position: absolute;
-  top: 100.5%;
-  left: 42%;
   background: url("../images/reviews-next.svg");
-  width: 135px;
+  background-repeat: no-repeat;
+  width: 35px;
   height: 1px;
   z-index: 20;
 }
 
 .swiper-button-next {
-  position: absolute;
-  top: 0;
-  right: 0;
   background: url("../images/reviews-next.svg");
+  background-repeat: no-repeat;
   width: 35px;
   height: 1px;
   z-index: 20;
@@ -1825,14 +1820,25 @@ body.mobile-menu__open {
 
 .swiper-slide img {
   display: block;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0 auto;
 }
 
 .swiper-slide-active img {
-  width: 500px;
+  width: 280px;
+}
+
+@media (min-width: 768px) {
+  .swiper-slide-active img {
+    width: 336px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .swiper-slide-active img {
+    width: 394px;
+  }
 }
 
 .swiper-slide__text {
@@ -1856,6 +1862,11 @@ body.mobile-menu__open {
     font-size: 18px;
     line-height: 1.22;
   }
+}
+
+.swiper-slide-prev.slider-item__text,
+.swiper-slide-next.slider-item__text {
+  display: none;
 }
 
 @media (max-width: 767.98px) {
@@ -1904,10 +1915,6 @@ body.mobile-menu__open {
   position: absolute;
   top: 380px;
   left: 311px;
-}
-
-.swiper-slide-active .img {
-  margin-bottom: 8px;
 }
 
 .swiper-pagination {

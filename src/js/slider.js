@@ -2,7 +2,7 @@ new Swiper(".mySwiper", {
   slidesPerGroup: 1,
   slidesPerView: 3,
   autoHeight: true,
-  // spaceBetween: 32,
+//   spaceBetween: 32,
   initialSlide: 1,
   centeredSlides: true,
   // touchAngle: 50,

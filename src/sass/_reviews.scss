@@ -78,10 +78,6 @@
     }
 }
 
-// .slider-item__img {
-//     margin-bottom: 8px;
-// }
-
 .star-list {
     display: flex;
     justify-content: center;
@@ -211,19 +207,20 @@
 .swiper.mySwiper {
     position: relative;
     margin-top: 20px;
-    width: 280px;
+    // width: 280px;
     height: 617px;
 
 
     @include mq(tablet) {
     margin-top: -9px;
-    width: 704px;
+    // width: 704px;
+    width: 100%;
     height: 655px;
     }
 
     @include mq(desktop) {
     margin-top: 56px;
-    width: 1031px;
+    width: 100%;
         height: 757px;
     }
 
@@ -231,14 +228,15 @@
 }
 
 .swiper-slide-active {
-    // margin-top: 200px;
     // width: 354px;
     @include mq(tablet) {
             margin-top: 76px;
+            // width: 704px;
         }
     
         @include mq(desktop) {
             margin-top: 144px;
+            // width: 1031px;
         }
 }
 
@@ -250,26 +248,23 @@
     display: none;
 }
 
-// .swiper-wrapper {
-
-//     // position: relative;
-// }
-
 .swiper-button-prev {
-    position: absolute;
-    top: 100.5%;
-    left: 42%;
+    // position: absolute;
+    // top: 100.5%;
+    // left: 42%;
     background: url('../images/reviews-next.svg');
-    width: 135px;
+    background-repeat: no-repeat;
+    width: 35px;
     height: 1px;
     z-index: 20;
 }
 
 .swiper-button-next {
-    position: absolute;
-    top: 0;
-    right: 0;
+    // position: absolute;
+    // top: 100.5%;
+    // right: 42%;
     background: url('../images/reviews-next.svg');
+    background-repeat: no-repeat;
     width: 35px;
     height: 1px;
     z-index: 20;
@@ -301,14 +296,28 @@
 
 .swiper-slide img {
     display: block;
-    // width: 152px;
-    height: 100%;
+    // width: 280px;
+    // height: 100%;
     object-fit: cover;
     margin: 0 auto;
+
+    @include mq(tablet) {
+    }
+
+    @include mq(desktop) {
+    }
 }
 
 .swiper-slide-active img {
-    width: 500px;
+    width: 280px;
+
+    @include mq(tablet) {
+        width: 336px;
+    }
+    
+    @include mq(desktop) {
+        width: 394px;
+    }
 }
 
 .swiper-slide__text {
@@ -330,10 +339,11 @@
         font-size: 18px;
         line-height: 1.22;
     }
-    // width: 704px;
-    // justify-content: center;
-    // text-align: center;
-    // margin-left: -100px;
+}
+
+.swiper-slide-prev.slider-item__text,
+.swiper-slide-next.slider-item__text {
+    display: none;
 }
 
 .swiper-slide__text1 {
@@ -379,11 +389,6 @@
         position: absolute;
         top: 380px;
         left: 311px;
-}
-
-.swiper-slide-active .img {
-    // width: 600px;
-    margin-bottom: 8px;
 }
 
 .swiper-pagination {
