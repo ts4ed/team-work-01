@@ -8,7 +8,8 @@ padding-top: 32px;
 padding-left: 8px;
 padding-right: 8px;
 box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
-    & .reg-box__item {
+position: relative;
+& .reg-box__item {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.23;
@@ -16,6 +17,9 @@ box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 
         &:last-child {
     font-weight: 400;
         }
+    @include mq(desktop) {
+        font-size: 20px;
+    }
     }
     & h2 {
     font-weight: 400;
@@ -108,6 +112,9 @@ margin-right: auto;
         & .reg-box-info {
         padding-left: 107px;
         width: 266px;
+        & ul {
+            width: 127px;
+            }
         }
         & .reg-box-apply {
         padding-left: 32px;
@@ -133,6 +140,7 @@ border-bottom: 1px solid #AB816C;
 outline: 0;
 &::placeholder {
     color: rgba(171, 129, 108, 0.5);
+    
 }
 &:focus:valid {
     border-color: rgba(0, 128, 0, 0.5);
@@ -148,4 +156,62 @@ outline: 0;
 }
 }
 
+}
+.reg-box-inside {
+    &::before {
+        @include mq(tablet) {
+        content: '';
+        position: absolute;
+        width: 196px;
+        height: 200px;
+        left: -32px;
+        top: -47px;
+        z-index: -1;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-image: url(../images/tablet/donut-reg--tablet.png);
+        transform: rotate(-11deg);
+            @include mq(retina) {
+                background-image: url(../images/tablet/donut-reg--tablet@2x.png);
+            }
+        }
+        @include mq(desktop) {
+        left: -16px;
+        top: 20px;
+        width: 250px;
+        height: 250px;
+        background-image: url(../images/desktop/donut-reg--desktop.png);
+        transform: rotate(3deg);
+        @include mq(retina) {
+            background-image: url(../images/desktop/donut-reg--desktop@2x.png);
+        }
+        }
+    }
+    &::after {
+        @include mq(tablet) {
+            content: '';
+            position: absolute;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 250px;
+            height: 420px;
+            top: 80px;
+            right: -50px;
+            z-index: -1;
+            background-image: url(../images/tablet/party-confetti--tablet.png);
+            @include mq(retina) {
+                background-image: url(../images/tablet/party-confetti--tablet@2x.png);
+            }
+        }
+        @include mq(desktop) {
+            width: 500px;
+            height: 550px;
+            top: 80px;
+            right: -100px;
+            background-image: url(../images/desktop/party-confetti--desktop.png);
+            @include mq(retina) {
+                background-image: url(../images/desktop/party-confetti--desktop@2x.png);
+            }
+        }
+    }
 }
