@@ -711,11 +711,11 @@ body {
   position: absolute;
   z-index: -1;
   width: 113px;
-  height: 99px;
+  height: 72px;
   background-size: contain;
   background-repeat: no-repeat;
-  bottom: -55px;
-  right: -47px;
+  bottom: -20px;
+  right: -50px;
   background-image: url(../../src/images/mobile/wheat-flour--mobile.png);
 }
 
@@ -729,9 +729,9 @@ body {
   .adress::after {
     background-image: url(../../src/images/tablet/wheat-flour--tablet.png);
     width: 207px;
-    height: 182px;
-    bottom: -111px;
-    right: -115px;
+    height: 90px;
+    bottom: -20px;
+    right: -113px;
   }
 }
 
@@ -745,8 +745,8 @@ body {
   .adress::after {
     background-image: url(../../src/images/desktop/wheat-flour--desktop.png);
     width: 355px;
-    height: 312px;
-    bottom: -160px;
+    height: 175px;
+    bottom: -20px;
     right: -375px;
   }
 }
