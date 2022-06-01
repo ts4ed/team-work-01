@@ -1,7 +1,6 @@
 .registration {
 margin-top: 32px;
 width: 280px;
-height: 466px;
 border-radius: 150px 150px 0 0;
 background-color: $sec-bg-color;
 text-align: center;
@@ -26,7 +25,6 @@ box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 
         margin-top: 0px;
     }
     }
-
 @include mq(tablet) {
     width: 100%;
     padding-top: 0;
@@ -51,13 +49,14 @@ box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 
         padding: 0;
     }
     & h2 {
-        line-height: 1.25;
-        width: 106px;
-        height: 65px;
-        margin-left: auto;
-        margin-right: auto;
         margin-bottom: 8px;
+        @include mq(desktop) {
+            margin-bottom: 16px;
+        }
     }
+}
+@include mq(desktop) {
+    margin-top: 60px;
 }
 .box-title {
 margin-left: auto;
@@ -141,5 +140,12 @@ outline: 0;
 &:focus:invalid {
     border-color: rgba(255, 0, 0, 0.5);
 }
+@include mq(tablet) {
+    margin-top: 16px;
 }
+@include mq(desktop) {
+    margin-top: 15px;
+}
+}
+
 }
