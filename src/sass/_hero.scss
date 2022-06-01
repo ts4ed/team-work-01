@@ -33,7 +33,7 @@
 
   color: $main-text-color;
   @include mq(mobile-only){
-    z-index: 250;
+    z-index: 210;
   }
   @include mq(desktop) {
     max-width: 490px;
