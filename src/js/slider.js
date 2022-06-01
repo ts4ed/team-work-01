@@ -9,7 +9,7 @@ new Swiper(".mySwiper", {
   slideToClickedSlide: true,
   loop: true,
         breakpoints: {
-          320: {
+          150: {
                   slidesPerView: 1,
           },  
           768: {
