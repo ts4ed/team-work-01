@@ -82,12 +82,18 @@ body {
 }
 
 .about {
-  margin-top: 5px;
+  padding-top: 5px;
 }
 
 @media (min-width: 768px) and (max-width: 1279.98px) {
   .about {
-    margin-top: 69px;
+    padding-top: 69px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about {
+    padding-top: 111px;
   }
 }
 
@@ -162,6 +168,11 @@ body {
     font-size: 18px;
     margin-bottom: 0;
   }
+}
+
+.more {
+  display: block;
+  margin-top: 16px;
 }
 
 .label {
@@ -243,6 +254,18 @@ body {
   margin-top: 32px;
 }
 
+@media (min-width: 768px) and (max-width: 1279.98px) {
+  .contact {
+    margin-top: 78px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .contact {
+    margin-top: 160px;
+  }
+}
+
 .contact__subtitle {
   text-align: center;
   margin-top: 16px;
@@ -297,6 +320,7 @@ body {
 
 @media (min-width: 1280px) {
   .contact-form input {
+    background-color: #FFFFF9;
     min-width: 394px;
   }
 }
@@ -436,6 +460,30 @@ body {
     height: 45px;
     font-size: 24px;
     line-height: 1.25;
+  }
+}
+
+.donut0 {
+  position: absolute;
+}
+
+@media (max-width: 767.98px) {
+  .donut0 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .donut0 {
+    top: -30px;
+    right: 120px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .donut0 {
+    top: -100px;
+    right: 0;
   }
 }
 
@@ -647,9 +695,25 @@ body {
   }
 }
 
+.hero__spoon {
+  position: absolute;
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .hero__spoon {
+    display: block;
+    top: 380px;
+    left: -140px;
+  }
+}
+
 .footer {
-  position: relative;
   padding-bottom: 20px;
+}
+
+.footer__container {
+  position: relative;
 }
 
 .social__icon {
@@ -674,7 +738,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 32px;
-  position: relative;
 }
 
 @media (min-width: 768px) {
@@ -702,58 +765,29 @@ body {
   margin-right: 4px;
 }
 
-.adress__icon:not(:last-child) {
-  margin-left: 63px;
-}
-
-.adress::after {
-  content: '';
+.footer__spoon {
   position: absolute;
   z-index: -1;
-  width: 113px;
-  height: 72px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  bottom: -20px;
-  right: -50px;
-  background-image: url(../../src/images/mobile/wheat-flour--mobile.png);
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (-moz-min-devile-pixel-ratio: 2), screen and (-o-min-devile-pixel-ratio: 2 / 1), screen and (-webkit-min-devile-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .adress::after {
-    background-image: url(../../src/images/mobile/wheat-flour--mobile@2x.png);
-  }
-}
-
-@media (min-width: 768px) {
-  .adress::after {
-    background-image: url(../../src/images/tablet/wheat-flour--tablet.png);
-    width: 207px;
-    height: 90px;
+@media (max-width: 767.98px) {
+  .footer__spoon {
+    right: -30px;
     bottom: -20px;
-    right: -113px;
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-moz-min-devile-pixel-ratio: 2), screen and (min-width: 768px) and (-o-min-devile-pixel-ratio: 2 / 1), screen and (min-width: 768px) and (-webkit-min-devile-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .adress::after {
-    background-image: url(../../src/images/tablet/wheat-flour--tablet@2x.png);
+@media (min-width: 768px) and (max-width: 1279.98px) {
+  .footer__spoon {
+    right: -21px;
+    bottom: -20px;
   }
 }
 
 @media (min-width: 1280px) {
-  .adress::after {
-    background-image: url(../../src/images/desktop/wheat-flour--desktop.png);
-    width: 355px;
-    height: 175px;
+  .footer__spoon {
+    right: -175px;
     bottom: -20px;
-    right: -375px;
-  }
-}
-
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-moz-min-devile-pixel-ratio: 2), screen and (min-width: 1280px) and (-o-min-devile-pixel-ratio: 2 / 1), screen and (min-width: 1280px) and (-webkit-min-devile-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .adress::after {
-    background-image: url(../../src/images/desktop/wheat-flour--desktop@2x.png);
   }
 }
 
@@ -1057,6 +1091,14 @@ body.mobile-menu__open {
 
 .program-list__item {
   margin-bottom: 8px;
+  margin-left: 15px;
+  position: relative;
+}
+
+.program-list__item > p::before {
+  position: absolute;
+  content: '>';
+  left: -15px;
 }
 
 @media (min-width: 1280px) {
@@ -1130,6 +1172,28 @@ body.mobile-menu__open {
   display: inline;
 }
 
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .event__circle-type, .event__circle-number, .event__circle-time, .event__circle-host {
   border-radius: 50%;
   background: #FEF3E4;
@@ -1165,6 +1229,8 @@ body.mobile-menu__open {
   background-repeat: no-repeat;
   top: -33px;
   left: 30px;
+  -webkit-animation: spin 15s linear 0s infinite;
+          animation: spin 15s linear 0s infinite;
   background-image: url(../../src/images/mobile/donut1--mobile.png);
 }
 
@@ -1471,21 +1537,32 @@ body.mobile-menu__open {
   margin-top: 20px;
 }
 
+
 .registration .mobile {
+
   font-weight: 400;
 }
 
 @media (min-width: 1280px) {
+
   .registration .mobile {
     font-size: 18px;
   }
 }
+
+
+  .registration .reg-box__item {
+    font-size: 20px;
+  }
+}
+
 
 @media (max-width: 767.98px) {
   .registration .mobile {
     margin-top: 0px;
   }
 }
+
 
 .registration .reg-box-info .reg-box__item {
   font-size: 18px;
@@ -1519,6 +1596,7 @@ body.mobile-menu__open {
   }
   .registration button {
     margin: auto 60px auto 0px;
+
   }
   .registration h2 {
     margin-bottom: 8px;
@@ -1547,6 +1625,12 @@ body.mobile-menu__open {
   padding-top: 8px;
   border-top: 1px solid rgba(171, 129, 108, 0.5);
 }
+
+
+.registration .reg-box-inside .reg-box-apply p {
+  font-size: 16px;
+}
+
 
 @media (min-width: 768px) {
   .registration .reg-box-inside {
@@ -1585,6 +1669,7 @@ body.mobile-menu__open {
     padding-right: 54px;
   }
 }
+
 
 @media (min-width: 768px) and (min-width: 1280px) {
   .registration .reg-box-inside .reg-box-apply .reg-box__item .mobile {
