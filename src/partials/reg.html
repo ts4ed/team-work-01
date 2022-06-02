@@ -1,6 +1,6 @@
 
 <div class="container">
-    <section class="registration">
+    <section class="registration" id="registration">
             <h2 class="title">Registration</h2>
         <div class="reg-box-inside">
             <div class="reg-box-info">
@@ -16,6 +16,7 @@
                                 id="registration-text"
                                 class="reg-box__list" 
                                 type="text"
+                                pattern="^[a-zA-Z]+$"
                                 placeholder="Your name"
                                 >
                             <input 
@@ -29,9 +30,9 @@
                             <input 
                                 id="registration-email"
                                 class="reg-box__list" 
-                                type="mail" 
+                                type="email" 
                                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                                placeholder="Email"
+                                placeholder="email"
                                 required
                                 >
                                 <button  type="submit" class="button">Register</button>
