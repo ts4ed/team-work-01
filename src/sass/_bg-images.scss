@@ -4,16 +4,16 @@
         url('../images/bg/bg-up--mobile.svg'),
         url('../images/bg/bg-down--mobile.svg');
     background-repeat: no-repeat, no-repeat;
-    background-position: top center, center bottom 181px;
-    background-size: auto;
+    background-position: top center, bottom center;
+    background-size: 100% 13.35%, 100% 44.42%;
 
                 @include mq(tablet) {
                     background-image:
                             url('../images/bg/bg-up--tablet.svg'),
                             url('../images/bg/bg-down--tablet.svg');
                         background-repeat: no-repeat, no-repeat;
-                        background-position: top center, center top 1239px;
-                        background-size: auto;
+                        background-position: top center, bottom center;
+                        background-size: 100% 24%, 100% 54.75%;
                     }
 
                         @include mq(desktop) {
@@ -22,7 +22,7 @@
                                 url('../images/bg/bg-down--desktop.svg');
                             background-repeat: no-repeat, no-repeat;
                             background-position: top center, bottom center;
-                            background-size: 100% auto;
+                            background-size: 100% 29%, 100% 53%;
     
                             }
 }
