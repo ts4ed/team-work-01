@@ -772,21 +772,21 @@ body {
 
 @media (max-width: 767.98px) {
   .footer__spoon {
-    right: -50px;
+    right: -30px;
     bottom: -20px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1279.98px) {
   .footer__spoon {
-    right: -25px;
+    right: -21px;
     bottom: -20px;
   }
 }
 
 @media (min-width: 1280px) {
   .footer__spoon {
-    right: -200px;
+    right: -175px;
     bottom: -20px;
   }
 }
