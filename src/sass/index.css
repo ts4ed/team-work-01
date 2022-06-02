@@ -1236,7 +1236,7 @@ body.mobile-menu__open {
   position: absolute;
   background-repeat: no-repeat;
   top: -33px;
-  left: 30px;
+  left: 25px;
   -webkit-animation: spin 15s linear 0s infinite;
           animation: spin 15s linear 0s infinite;
   background-image: url(../../src/images/mobile/donut1--mobile.png);
@@ -1281,6 +1281,8 @@ body.mobile-menu__open {
   .event__circle-type::before, .event__circle-number::before, .event__circle-time::before, .event__circle-host::before {
     width: 97px;
     height: 107px;
+    top: -40px;
+    left: 40px;
     background-image: url(../../src/images/desktop/donut1--desktop.png);
   }
 }
@@ -2313,5 +2315,30 @@ body.mobile-menu__open {
 
 .social__icon {
   fill: #2E2520;
+}
+
+.bg-images {
+  background-image: url("../images/bg/bg-up--mobile.svg"), url("../images/bg/bg-down--mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top center, bottom center;
+  background-size: 100% 13.35%, 100% 44.42%;
+}
+
+@media (min-width: 768px) {
+  .bg-images {
+    background-image: url("../images/bg/bg-up--tablet.svg"), url("../images/bg/bg-down--tablet.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom center;
+    background-size: 100% 24%, 100% 54.75%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .bg-images {
+    background-image: url("../images/bg/bg-up--desktop.svg"), url("../images/bg/bg-down--desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, bottom center;
+    background-size: 100% 29%, 100% 53%;
+  }
 }
 /*# sourceMappingURL=index.css.map */

@@ -71,6 +71,7 @@
   }
 }
 .donut0{
+  pointer-events: none;
 position: absolute;
   @include mq(mobile-only) {
     display: none;
@@ -88,6 +89,7 @@ position: absolute;
 }
 .donut1 {
   position: absolute;
+  pointer-events: none;
   z-index: 200;
   @include mq(mobile-only) {
     top: -58px;
