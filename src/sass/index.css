@@ -81,6 +81,11 @@ body {
   }
 }
 
+.img-crop {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .about {
   padding-top: 5px;
 }
@@ -472,6 +477,7 @@ body {
 }
 
 .donut0 {
+  pointer-events: none;
   position: absolute;
 }
 
@@ -497,6 +503,7 @@ body {
 
 .donut1 {
   position: absolute;
+  pointer-events: none;
   z-index: 200;
 }
 
@@ -1656,9 +1663,33 @@ body.mobile-menu__open {
   }
 }
 
-@media (min-width: 768px) and (min-width: 768px) and (max-width: 1279.98px) {
+@media (min-width: 768px) and (min-width: 768px) {
   .registration .reg-box-inside .reg-box-apply {
     padding-right: 54px;
+    margin-right: auto;
+  }
+  .registration .reg-box-inside .reg-box-apply form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .registration .reg-box-inside .reg-box-apply form .button {
+    position: absolute;
+    right: -261px;
+    top: 20px;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1280px) {
+  .registration .reg-box-inside .reg-box-apply form .button {
+    top: 20px;
+    right: -261px;
+    margin: auto 60px auto 0;
   }
 }
 
@@ -1699,7 +1730,6 @@ body.mobile-menu__open {
 .registration .reg-box__list {
   width: 100%;
   margin-top: 20px;
-  color: rgba(171, 129, 108, 0.5);
   background-color: #fffff9;
   border: none;
   border-bottom: 1px solid #AB816C;
