@@ -1,6 +1,11 @@
 .footer {
-  position: relative;
   padding-bottom: 20px;
+  
+}
+
+.footer__container {
+  position: relative;
+  
 }
 
 .social__icon {
@@ -16,10 +21,11 @@
 
 
 .adress {
+  
   display: flex;
   justify-content: space-between;
   margin-top: 32px;
-  position: relative;
+  
 
 
   @include mq(tablet) {
@@ -47,50 +53,28 @@
 
   }
 
-  &__icon:not(:last-child) {
-    margin-left: 63px;
+}
 
-  }
+.footer__spoon {
+  position: absolute;
+  z-index: -1;
 
-  &::after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    width: 113px;
-    height: 72px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    bottom: -20px;
-    right: -50px;
-    background-image: url(../../src/images/mobile/wheat-flour--mobile.png);
-  
-      @include mq(retina) {
-          background-image: url(../../src/images/mobile/wheat-flour--mobile@2x.png);
-        }
-  
-
-    @include mq(tablet) {
-      background-image: url(../../src/images/tablet/wheat-flour--tablet.png);
-      width: 207px;
-      height: 90px;
-      bottom: -20px;
-      right: -113px;
-      
-        @include mq(retina) {
-          background-image: url(../../src/images/tablet/wheat-flour--tablet@2x.png);
-        }
-      }
-    @include mq(desktop) {
-      background-image: url(../../src/images/desktop/wheat-flour--desktop.png);
-      width: 355px;
-      height: 175px;
-      bottom: -20px;
-      right: -375px;
-      
-        @include mq(retina) {
-          background-image: url(../../src/images/desktop/wheat-flour--desktop@2x.png);
-        }
-      }
+  @include mq(mobile-only) {
     
+    right: -50px;
+    bottom: -20px;
   }
+  
+  @include mq(tablet-only) {
+    
+    right: -25px;
+    bottom: -20px;
+  }
+
+  @include mq(desktop) {
+    
+    right: -200px;
+    bottom: -20px;
+  }
+
 }
