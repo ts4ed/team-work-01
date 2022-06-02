@@ -2299,10 +2299,6 @@ body.mobile-menu__open {
   background: #AB816C;
 }
 
-.star-list__item--gold {
-  fill: currentColor;
-}
-
 .social__list {
   display: -webkit-box;
   display: -ms-flexbox;
