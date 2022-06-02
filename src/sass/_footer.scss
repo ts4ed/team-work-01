@@ -61,19 +61,19 @@
 
   @include mq(mobile-only) {
     
-    right: -50px;
+    right: -30px;
     bottom: -20px;
   }
   
   @include mq(tablet-only) {
     
-    right: -25px;
+    right: -21px;
     bottom: -20px;
   }
 
   @include mq(desktop) {
     
-    right: -200px;
+    right: -175px;
     bottom: -20px;
   }
 
