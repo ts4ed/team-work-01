@@ -1,0 +1,28 @@
+.bg-images {
+    
+    background-image: 
+        url('../images/bg/bg-up--mobile.svg'),
+        url('../images/bg/bg-down--mobile.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top center, center bottom 181px;
+    background-size: auto;
+
+                @include mq(tablet) {
+                    background-image:
+                            url('../images/bg/bg-up--tablet.svg'),
+                            url('../images/bg/bg-down--tablet.svg');
+                        background-repeat: no-repeat, no-repeat;
+                        background-position: top center, center top 1239px;
+                        background-size: auto;
+                    }
+
+                        @include mq(desktop) {
+                            background-image:
+                                url('../images/bg/bg-up--desktop.svg'),
+                                url('../images/bg/bg-down--desktop.svg');
+                            background-repeat: no-repeat, no-repeat;
+                            background-position: top center, bottom center;
+                            background-size: 100% auto;
+    
+                            }
+}
