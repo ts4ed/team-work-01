@@ -1,11 +1,11 @@
 .contact {
   text-align: center;
-  margin-top: 32px;
+  padding-top: 32px;
   @include mq(tablet-only) {
-    margin-top: 78px;
+    padding-top: 78px;
   }
   @include mq(desktop) {
-    margin-top: 160px;
+    padding-top: 160px;
   }
 }
 
@@ -34,7 +34,6 @@
     }
     @include mq(desktop) {
       background-color: $sec-bg-color;
-      
       min-width: 394px;
     }
   }
