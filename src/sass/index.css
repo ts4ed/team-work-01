@@ -329,24 +329,32 @@ body {
   margin-top: 16px;
 }
 
-.contact-form__email:focus:valid {
+.contact-form__email:valid {
   border-color: rgba(0, 128, 0, 0.5);
 }
 
-.contact-form__email:focus:invalid {
+.contact-form__email:invalid {
   border-color: rgba(255, 0, 0, 0.5);
+}
+
+.contact-form__email:placeholder-shown {
+  border-bottom: 1px solid #AB816C;
 }
 
 .contact-form__text {
   margin-top: 20px;
 }
 
-.contact-form__text:focus:valid {
+.contact-form__text:valid {
   border-color: rgba(0, 128, 0, 0.5);
 }
 
-.contact-form__text:focus:invalid {
+.contact-form__text:invalid {
   border-color: rgba(255, 0, 0, 0.5);
+}
+
+.contact-form__text:placeholder-shown {
+  border-bottom: 1px solid #AB816C;
 }
 
 .hero__container {
