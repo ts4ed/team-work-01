@@ -11,27 +11,32 @@
             </div>
                 <div class="reg-box-apply">
             <p class="reg-box__item mobile">Apply your personal info<br>for registration </з>
-            <form>
-                    <input 
-                        id="contact-text"
-                        class="reg-box__list" 
-                        type="text" 
-                        placeholder="Your name">
-                    <input 
-                        id="contact-tel"
-                        class="reg-box__list" 
-                        type="tel" 
-                        placeholder="Phone number">
-                    <input 
-                        id="contact-email"
-                        class="reg-box__list" 
-                        type="mail" 
-                        placeholder="Email">
-            </form>
-            
+                    <form>
+                            <input 
+                                id="registration-text"
+                                class="reg-box__list" 
+                                type="text"
+                                placeholder="Your name"
+                                >
+                            <input 
+                                id="registration-tel"
+                                class="reg-box__list" 
+                                type="tel" 
+                                maxlength="13"
+                                pattern="3\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2"
+                                placeholder="Phone number"
+                                >
+                            <input 
+                                id="registration-email"
+                                class="reg-box__list" 
+                                type="mail" 
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                placeholder="Email"
+                                required
+                                >
+                                <button  type="submit" class="button">Register</button>
+                    </form>
                 </div>
-                <button class="button">Register</button>
         </div>
 </div>
 </div>
-
