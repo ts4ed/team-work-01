@@ -251,18 +251,18 @@ body {
 
 .contact {
   text-align: center;
-  margin-top: 32px;
+  padding-top: 32px;
 }
 
 @media (min-width: 768px) and (max-width: 1279.98px) {
   .contact {
-    margin-top: 78px;
+    padding-top: 78px;
   }
 }
 
 @media (min-width: 1280px) {
   .contact {
-    margin-top: 160px;
+    padding-top: 160px;
   }
 }
 
@@ -329,24 +329,32 @@ body {
   margin-top: 16px;
 }
 
-.contact-form__email:focus:valid {
+.contact-form__email:valid {
   border-color: rgba(0, 128, 0, 0.5);
 }
 
-.contact-form__email:focus:invalid {
+.contact-form__email:invalid {
   border-color: rgba(255, 0, 0, 0.5);
+}
+
+.contact-form__email:placeholder-shown {
+  border-bottom: 1px solid #AB816C;
 }
 
 .contact-form__text {
   margin-top: 20px;
 }
 
-.contact-form__text:focus:valid {
+.contact-form__text:valid {
   border-color: rgba(0, 128, 0, 0.5);
 }
 
-.contact-form__text:focus:invalid {
+.contact-form__text:invalid {
   border-color: rgba(255, 0, 0, 0.5);
+}
+
+.contact-form__text:placeholder-shown {
+  border-bottom: 1px solid #AB816C;
 }
 
 .hero__container {
@@ -1537,32 +1545,21 @@ body.mobile-menu__open {
   margin-top: 20px;
 }
 
-
 .registration .mobile {
-
   font-weight: 400;
 }
 
 @media (min-width: 1280px) {
-
   .registration .mobile {
     font-size: 18px;
   }
 }
-
-
-  .registration .reg-box__item {
-    font-size: 20px;
-  }
-}
-
 
 @media (max-width: 767.98px) {
   .registration .mobile {
     margin-top: 0px;
   }
 }
-
 
 .registration .reg-box-info .reg-box__item {
   font-size: 18px;
@@ -1596,7 +1593,6 @@ body.mobile-menu__open {
   }
   .registration button {
     margin: auto 60px auto 0px;
-
   }
   .registration h2 {
     margin-bottom: 8px;
@@ -1625,12 +1621,6 @@ body.mobile-menu__open {
   padding-top: 8px;
   border-top: 1px solid rgba(171, 129, 108, 0.5);
 }
-
-
-.registration .reg-box-inside .reg-box-apply p {
-  font-size: 16px;
-}
-
 
 @media (min-width: 768px) {
   .registration .reg-box-inside {
@@ -1669,7 +1659,6 @@ body.mobile-menu__open {
     padding-right: 54px;
   }
 }
-
 
 @media (min-width: 768px) and (min-width: 1280px) {
   .registration .reg-box-inside .reg-box-apply .reg-box__item .mobile {
