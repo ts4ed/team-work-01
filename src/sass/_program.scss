@@ -153,7 +153,7 @@
         position: absolute;
         background-repeat: no-repeat;
         top: -33px;
-        left: 30px;
+        left: 25px;
         animation: spin 15s linear 0s infinite;
 
         @include mq(tablet) {
@@ -186,6 +186,8 @@
         @include mq(desktop) {
             width: 97px;
             height: 107px;
+            top: -40px;
+            left: 40px;
             background-image: url(../../src/images/desktop/donut1--desktop.png);
 
             @include mq(retina) {
