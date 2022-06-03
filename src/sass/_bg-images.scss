@@ -4,8 +4,8 @@
         url('../images/bg/bg-up--mobile.svg'),
         url('../images/bg/bg-down--mobile.svg');
     background-repeat: no-repeat, no-repeat;
-    background-position: top center, bottom center;
-    background-size: 100% 13.35%, 100% 44.42%;
+    background-position: top center, bottom 175px right 0px;
+    background-size: 100% 13.35%, 100% 39.25%;
 
                 @include mq(tablet) {
                     background-image:
@@ -13,7 +13,7 @@
                             url('../images/bg/bg-down--tablet.svg');
                         background-repeat: no-repeat, no-repeat;
                         background-position: top center, bottom center;
-                        background-size: 100% 24%, 100% 54.75%;
+                        background-size: 100% 24%, 100% 54%;
                     }
 
                         @include mq(desktop) {
