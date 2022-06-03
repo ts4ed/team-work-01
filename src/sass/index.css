@@ -81,6 +81,11 @@ body {
   }
 }
 
+.img-crop {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .about {
   padding-top: 5px;
 }
@@ -329,24 +334,32 @@ body {
   margin-top: 16px;
 }
 
-.contact-form__email:focus:valid {
+.contact-form__email:valid {
   border-color: rgba(0, 128, 0, 0.5);
 }
 
-.contact-form__email:focus:invalid {
+.contact-form__email:invalid {
   border-color: rgba(255, 0, 0, 0.5);
+}
+
+.contact-form__email:placeholder-shown {
+  border-bottom: 1px solid #AB816C;
 }
 
 .contact-form__text {
   margin-top: 20px;
 }
 
-.contact-form__text:focus:valid {
+.contact-form__text:valid {
   border-color: rgba(0, 128, 0, 0.5);
 }
 
-.contact-form__text:focus:invalid {
+.contact-form__text:invalid {
   border-color: rgba(255, 0, 0, 0.5);
+}
+
+.contact-form__text:placeholder-shown {
+  border-bottom: 1px solid #AB816C;
 }
 
 .hero__container {
@@ -1230,7 +1243,7 @@ body.mobile-menu__open {
   position: absolute;
   background-repeat: no-repeat;
   top: -33px;
-  left: 30px;
+  left: 25px;
   -webkit-animation: spin 15s linear 0s infinite;
           animation: spin 15s linear 0s infinite;
   background-image: url(../../src/images/mobile/donut1--mobile.png);
@@ -1275,6 +1288,8 @@ body.mobile-menu__open {
   .event__circle-type::before, .event__circle-number::before, .event__circle-time::before, .event__circle-host::before {
     width: 97px;
     height: 107px;
+    top: -40px;
+    left: 40px;
     background-image: url(../../src/images/desktop/donut1--desktop.png);
   }
 }
@@ -1648,9 +1663,25 @@ body.mobile-menu__open {
   }
 }
 
-@media (min-width: 768px) and (min-width: 768px) and (max-width: 1279.98px) {
+@media (min-width: 768px) and (min-width: 768px) {
   .registration .reg-box-inside .reg-box-apply {
     padding-right: 54px;
+    margin-right: auto;
+  }
+  .registration .reg-box-inside .reg-box-apply form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .registration .reg-box-inside .reg-box-apply form .button {
+    position: absolute;
+    right: -261px;
+    top: 20px;
   }
 }
 
@@ -1691,7 +1722,6 @@ body.mobile-menu__open {
 .registration .reg-box__list {
   width: 100%;
   margin-top: 20px;
-  color: rgba(171, 129, 108, 0.5);
   background-color: #fffff9;
   border: none;
   border-bottom: 1px solid #AB816C;

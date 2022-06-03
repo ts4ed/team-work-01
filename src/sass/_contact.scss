@@ -40,19 +40,25 @@
 }
 .contact-form__email {
   margin-top: 16px;
-  &:focus:valid {
+  &:valid {
     border-color: rgba(0, 128, 0, 0.5);
   }
-  &:focus:invalid {
+  &:invalid {
     border-color: rgba(255, 0, 0, 0.5);
   }
 }
+.contact-form__email:placeholder-shown {
+  border-bottom: 1px solid $details-color;
+}
 .contact-form__text {
   margin-top: 20px;
-  &:focus:valid {
+  &:valid {
     border-color: rgba(0, 128, 0, 0.5);
   }
-  &:focus:invalid {
+  &:invalid {
     border-color: rgba(255, 0, 0, 0.5);
   }
+}
+.contact-form__text:placeholder-shown {
+  border-bottom: 1px solid $details-color;
 }

@@ -102,8 +102,28 @@ margin-right: auto;
     padding-left: 24px;
     border-left: 1px solid rgba(171, 129, 108, 0.5);;
     border-top: 0;
-        @include mq(tablet-only) {
+        @include mq(tablet) {
         padding-right: 54px;
+        margin-right: auto;
+        & form {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            & .button {
+                position: absolute;
+                right: -261px;
+                top: 20px;
+            }
+        }
+        }
+        @include mq(desktop) {
+            & form {
+                & .button {
+                    top: 20px;
+                    right: -261px;
+                    margin: auto 60px auto 0;
+                }
+            }
         }
         & .reg-box__item .mobile {
             @include mq(desktop) {
@@ -141,14 +161,12 @@ margin-right: auto;
 .reg-box__list {
 width: 100%; 
 margin-top: 20px;
-color: rgba(171, 129, 108, 0.5);
 background-color: rgba(255, 255, 249, 1);
 border: none;
 border-bottom: 1px solid #AB816C;
 outline: 0;
 &::placeholder {
     color: rgba(171, 129, 108, 0.5);
-    
 }
 &:focus:valid {
     border-color: rgba(0, 128, 0, 0.5);
@@ -163,7 +181,6 @@ outline: 0;
     margin-top: 15px;
 }
 }
-
 }
 .reg-box-inside {
     &::before {
@@ -223,3 +240,7 @@ outline: 0;
         }
     }
 }
+
+
+
+
