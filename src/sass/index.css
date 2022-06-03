@@ -1686,14 +1686,6 @@ body.mobile-menu__open {
 }
 
 @media (min-width: 768px) and (min-width: 1280px) {
-  .registration .reg-box-inside .reg-box-apply form .button {
-    top: 20px;
-    right: -261px;
-    margin: auto 60px auto 0;
-  }
-}
-
-@media (min-width: 768px) and (min-width: 1280px) {
   .registration .reg-box-inside .reg-box-apply .reg-box__item .mobile {
     font-size: 18px;
   }
